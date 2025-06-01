@@ -1,0 +1,14 @@
+{
+  "name": "aubergine-bot",
+  "version": "1.0.0",
+  "description": "Bot qui réagit avec 🍆 aux mots sexuellement explicites",
+  "main": "aubergineBot.js",
+  "scripts": {
+    "start": "node aubergineBot.js"
+  },
+  "author": "Toi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.0.0"
+  }
+}
