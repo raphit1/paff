@@ -1,4 +1,3 @@
-require("dotenv").config();
 const { Client, GatewayIntentBits } = require("discord.js");
 
 const client = new Client({
@@ -11,13 +10,9 @@ const client = new Client({
 
 const aubergineKeywords = [
   "paf", "paff",
-
-  // Classiques directs
   "bite", "bitte", "zboub", "zbib", "zgeg", "zob",
   "teub", "teubs", "zizi", "kiki", "quéquette", "queue", "queues",
   "chibre", "gland", "tub",
-
-  // Anglais classiques
   "dick", "cock", "penis", "phallus", "dong", "shaft"
 ];
 
@@ -39,4 +34,5 @@ client.on("messageCreate", async message => {
   }
 });
 
+// Ici on utilise directement la variable d'environnement
 client.login(process.env.TOKEN);
